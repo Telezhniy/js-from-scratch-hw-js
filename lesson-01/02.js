@@ -7,3 +7,9 @@
 
 // your code
 let factorial;
+factorial = 1;
+let increment = 1;
+while (increment <= 10) {
+  factorial = factorial * increment;
+  increment++;
+}
