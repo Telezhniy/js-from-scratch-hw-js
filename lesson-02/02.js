@@ -61,6 +61,8 @@ switch (attempt2) {
 
 if (dice1 > 3 && dice2 > 3 && dice1 === dice2) {
   isWinningDouble = true;
+} else {
+  isWinningDouble = false;
 }
 /*
 console.log('Первый бросок: ' + dice1)
