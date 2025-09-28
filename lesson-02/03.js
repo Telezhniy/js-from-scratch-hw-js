@@ -11,11 +11,11 @@ if (score <= 49) {
 } else if (score > 49 && score <= 69) {
   grade = "D";
 } else if (score > 69 && score <= 79) {
-  grade = "B";
+  grade = "C";
 } else if (score > 79 && score <= 89) {
-  grade = "A";
+  grade = "B";
 } else if (score > 89 && score <= 100) {
-  grade = "S";
+  grade = "A";
 } else {
   console.log("enter correct number");
 }
