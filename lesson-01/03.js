@@ -6,3 +6,13 @@
 
 // your code
 let sum;
+let increment = 1;
+sum = 0;
+while (increment <= 20) {
+  if (increment % 2 !== 0) {
+    sum = sum + increment;
+    increment++;
+  } else {
+    increment++;
+  }
+}
