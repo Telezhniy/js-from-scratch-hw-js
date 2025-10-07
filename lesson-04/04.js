@@ -11,7 +11,7 @@
 
 Пример работы функции: `doubleEachCharacter('hello')` вернёт `'hheelllloo'`
 */
-
+let string 
 function doubleEachCharacter(str) {
   let newString = "";
   for (let i = 0; i < str.length; i++) {
@@ -20,3 +20,4 @@ function doubleEachCharacter(str) {
   }
   return newString;
 }
+
