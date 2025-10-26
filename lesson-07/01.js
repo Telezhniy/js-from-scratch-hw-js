@@ -21,23 +21,25 @@ const WEB_TECH_IMAGES = [
 const img = document.getElementById("web-tech-image");
 const prevButton = document.getElementById("prev-button");
 const nextButton = document.getElementById("next-button");
-let i = 0;
-img.setAttribute("src", WEB_TECH_IMAGES[i]);
+let indexOfPicture = WEB_TECH_IMAGES.indexOf(
+  document.getElementById("web-tech-image").src
+);
+
 nextButton.addEventListener("click", function () {
-  if (i < 2) {
-    i++;
-    img.setAttribute("src", WEB_TECH_IMAGES[i]);
+  if (indexOfPicture < WEB_TECH_IMAGES.length - 1) {
+    indexOfPicture++;
+    img.setAttribute("src", WEB_TECH_IMAGES[indexOfPicture]);
   } else {
-    i = 0;
-    img.setAttribute("src", WEB_TECH_IMAGES[i]);
+    indexOfPicture = 0;
+    img.setAttribute("src", WEB_TECH_IMAGES[indexOfPicture]);
   }
 });
 prevButton.addEventListener("click", function () {
-  if (i > 0) {
-    i--;
-    img.setAttribute("src", WEB_TECH_IMAGES[i]);
+  if (indexOfPicture > 0) {
+    indexOfPicture--;
+    img.setAttribute("src", WEB_TECH_IMAGES[indexOfPicture]);
   } else {
-    i = 2;
-    img.setAttribute("src", WEB_TECH_IMAGES[i]);
+    indexOfPicture = WEB_TECH_IMAGES.length - 1;
+    img.setAttribute("src", WEB_TECH_IMAGES[indexOfPicture]);
   }
 });
