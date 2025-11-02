@@ -4,9 +4,8 @@
  */
 
 function isNumeric(str) {
-  // your code
+  return isNaN(parseInt(str)) || isNaN(parseInt(+str)) ? false : true;
 }
-
 // console.log(isNumeric("123")) // Ожидаемый результат: true
 // console.log(isNumeric("12.3")) // Ожидаемый результат: true
 // console.log(isNumeric("123abc")) // Ожидаемый результат: false
