@@ -16,6 +16,7 @@ function truncate(str, maxLength) {
 
     arrayOfString.push(element);
   }
-
+  arrayOfString.push("...");
   return arrayOfString.join("");
 }
+
